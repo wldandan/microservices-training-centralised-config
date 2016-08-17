@@ -60,3 +60,24 @@ _(Note that this file must be "boostrap" -- not "application" -- so that it is r
 You should see the config message in your browser.
 
 ------------------------------------------------------------------------------------------
+
+** Part 3 - Access configuration file by Spring profile
+
+13. Create a separate file in your GitHub repository called "event-service-production.properties” (or .yml).  
+Populate it with the "db*" key and a different value than used in the original file.
+
+14. Stop the client application.  Modify the boostrap file to contain a key of spring.profiles.active: production.  Save, and restart your client.  
+Access the URL.  Which db* is displayed?  (You could also run the application with -Dspring.profiles.active=production rather than changing the bootstrap file)
+
+
+------------------------------------------------------------------------------------------
+
+** Part 4 - Access configuration file by automatically refresh
+15. Add Spring Boot Actuator 
+16. Return to your EventController and convert to @RefreshScope
+17. Change the configuration in event-service.properties, for instance "database.password=password3333"
+18. execute 'curl -X POST http://localhost:9999/refresh', you will get the result includes '["database.password"]' in console to represent the database.password has been changed
+19. then, refresh the page 'http://localhost:9999', you will get the new password value in browser.
+
+
+  
