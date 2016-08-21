@@ -1,0 +1,8 @@
+---
+spring:
+  application:
+    name: event-service
+  cloud:
+    config:
+      enabled: true
+      uri: ${configserver.url:http://localhost:8888}

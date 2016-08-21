@@ -79,5 +79,9 @@ Access the URL.  Which db* is displayed?  (You could also run the application wi
 18. execute 'curl -X POST http://localhost:9999/refresh', you will get the result includes '["database.password"]' in console to represent the database.password has been changed
 19. then, refresh the page 'http://localhost:9999', you will get the new password value in browser.
 
+------------------------------------------------------------------------------------------
+
+
+
 
   

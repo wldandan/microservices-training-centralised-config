@@ -4,3 +4,4 @@
 build/*
 *.gradle/*
 .DS_Store
+push-config-to-service/rabbitmq_server-3.6.5/*
