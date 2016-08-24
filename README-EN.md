@@ -1,47 +1,43 @@
-## 创建Config-server和Config-client
+## Create a Spring Cloud Config Server and Client
 
-** 第一部分 - 创建Conifg-server
+** Part 1 - Create Config Server 
 
-1. 创建Spring-boot应用
-   * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
-   * 命名为cofig-server 
-   * 设置端口为8888
+1. Create a new Spring Boot application. 
+   Name the project "config-server”, and use this value for the Artifact.  
+	* access http://start.spring.io/ or any IDE, create a new project
 
-2. 检查依赖
-    * spring-cloud-config-server
+2. Edit the main Application class (probably named ConfigServerApplication).  Add the @EnableConfigServer to the application class.
 
-3. 使用@EnableConfigServer定义SpringBoot的主类
+3. Create a new repository on GitHub to hold your application configuration data.  Call the repository "config-repo" or a name of your choosing.  Note the full URI of the repository, you will need this in a following step.
 
+4. Add a new file to your GitHub repository called "{spring-application}-{profile}.yml” (or properties).
+Add a key called "database.username" and value of "admin", or any other value of your favourite.
+Create "test" branch,Add a key called "database.username" and a value of "[test]admin", or any other value of your choosing.
 
-4. 创建配置文件相关目录config-repo
-    * 本地文件
-    * 或者github
+5. Back in your project, create an application.yml (or application.properties) file in the root of your classpath (src/main/resources recommended). 
+Add the key "spring.cloud.config.server.git.uri" and the value "https://github.com/"YOUR-GITHUB-ID"/config-repo", substituting the value for Github ID and repository name as needed.  Also set the “server.port” to 8888.
 
+6. Run the application.  Open the URL [http://localhost:8888/event-service/default/](http://localhost:8001/event-service/default/).  You should see the JSON result that will actually be used by Spring.  If the server is not working, review the prior steps to find the issue before moving on.
 
-5. 在config-repo中定义配置文件，如"{spring-application}-{profile}.yml” (或者properties文件).
-    * 本例中使用Git和本地文件，并定义event-service.properties
-    * 定义database.username=admin
-    * 定义分支testdatabase.username=[test]admin    
-
-
-6. 运行config-server，访问http://localhost:8888/event-service/default/
-   或者尝试访问如下不同的URL
+And please access the following url:
     /{application}/{profile}
     http://localhost:8888/event-service/development
-    //event-service-development.properties
+    event-service-development.properties
+
     http://localhost:8888/event-service/production
-    //event-service-production.properties
+    event-service-production.properties
 
     /{application}/{profile}[/{label}]
     http://localhost:8888/event-service/development/master
-    //event-service-development.properties in master branch
+    event-service-development.properties in master branch
 
     http://localhost:8888/event-service/production/test
-    //event-service-production.properties in test branch
+    http://localhost:8888/event-service/development/test
+    event-service-production.properties in test branch
 
 ------------------------------------------------------------------------------------------
 
-** 第二部分 - 创建Conifg-client
+**Part 2 - Create Config Client:**
 
 9. Create a new, separate Spring Boot application. 
 Name the project "event-service", and use this value for the Artifact.  

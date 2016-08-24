@@ -20,17 +20,8 @@ public class EventController {
     @Value("${database.password}")
     private String password;
 
-    @Value("${configuration.projectName}")
-    private String projectName;
-
     @RequestMapping("/")
     String index() {
         return "DB access by dbUrl:" + url + " - dbUser:" + username + " - dbPass:" + password;
-    }
-
-
-    @RequestMapping("/project-name")
-    public String projectName() {
-        return this.projectName;
     }
 }
