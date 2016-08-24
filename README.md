@@ -92,7 +92,7 @@
    
 ------------------------------------------------------------------------------------------
 
-** 第三部分 - 使用Spring Cloud Bus 与 RefreshScope自动刷新多实例配置
+** 第四部分 - 使用Spring Cloud Bus 与 RefreshScope自动刷新多实例配置
 
   1. 在Event-service中增加依赖
     spring-cloud-starter-bus-amqp
