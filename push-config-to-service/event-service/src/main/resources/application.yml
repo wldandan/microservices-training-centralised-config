@@ -1,10 +1,6 @@
 server:
   port: 9999
 
-endpoints:
-  restart:
-    enabled: true
-
 logging:
   levels:
     org.springframework.boot.env.PropertySourcesLoader: TRACE
