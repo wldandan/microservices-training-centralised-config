@@ -1,7 +1,7 @@
 server:
-  port: 9999
+  port: 8080
 
-logging:
-  levels:
-    org.springframework.boot.env.PropertySourcesLoader: TRACE
-    org.springframework.web: DEBUG
+---
+
+spring:
+  profiles: docker

@@ -21,6 +21,6 @@ public class EventController {
 
     @RequestMapping("/")
     String index() {
-        return "DB access by dbUrl:" + dbUrl + " - dbUser:" + dbUser + " - dbPass:" + dbPass;
+        return "DBUrl:" + dbUrl + " | dbUser:" + dbUser + " | dbPass:" + dbPass;
     }
 }
