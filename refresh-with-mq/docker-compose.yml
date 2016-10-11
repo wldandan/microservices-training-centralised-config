@@ -1,0 +1,33 @@
+version: '2'
+services:
+  rabbitmq:
+    image: rabbitmq
+  config-server:
+    build: config-server
+    command: java -jar /app/config-server-latest.jar
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8888:8888"
+  event-service-1:
+    build: event-service
+    command: bash -c "wait-for-it config-server:8888 && wait-for-it rabbitmq:5672 && java -jar /app/event-service-latest.jar"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SERVER_PORT: 8080
+    ports:
+      - "8080:8080"
+    depends_on:
+      - config-server
+      - rabbitmq
+  event-service-2:
+    build: event-service
+    command: bash -c "wait-for-it config-server:8888 && wait-for-it rabbitmq:5672 && java -jar /app/event-service-latest.jar"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+      SERVER_PORT: 8080
+    ports:
+      - "8090:8080"
+    depends_on:
+      - config-server
+      - rabbitmq

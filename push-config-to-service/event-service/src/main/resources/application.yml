@@ -1,7 +1,0 @@
-server:
-  port: 9999
-
-logging:
-  levels:
-    org.springframework.boot.env.PropertySourcesLoader: TRACE
-    org.springframework.web: DEBUG

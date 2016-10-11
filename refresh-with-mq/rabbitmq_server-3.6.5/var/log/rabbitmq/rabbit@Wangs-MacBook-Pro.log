@@ -1,0 +1,1429 @@
+
+=INFO REPORT==== 21-Aug-2016::17:27:52 ===
+Starting RabbitMQ 3.6.5 on Erlang 17.5
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 21-Aug-2016::17:27:52 ===
+node           : rabbit@Wangs-MacBook-Pro
+home dir       : /Users/wanglei
+config file(s) : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/etc/rabbitmq/rabbitmq.config (not found)
+cookie hash    : pYdgbANFei1orh7YpU60PQ==
+log            : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro.log
+sasl log       : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro-sasl.log
+database dir   : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Memory limit set to 2103MB of 5259MB total.
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Limiting to approx 7068 file handles (6359 sockets)
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Database directory at /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro is empty. Initialising from scratch...
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 21-Aug-2016::17:27:53 ===
+Adding vhost '/'
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+Creating user 'guest'
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+Setting permissions for 'guest' in '/' to '.*', '.*', '.*'
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 21-Aug-2016::17:27:54 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 21-Aug-2016::17:27:54 ===
+Server startup complete; 0 plugins started.
+
+=INFO REPORT==== 21-Aug-2016::17:27:55 ===
+accepting AMQP connection <0.326.0> (127.0.0.1:59575 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:27:57 ===
+accepting AMQP connection <0.345.0> (127.0.0.1:59576 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:28:21 ===
+closing AMQP connection <0.345.0> (127.0.0.1:59576 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:28:40 ===
+accepting AMQP connection <0.369.0> (127.0.0.1:59580 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:29:54 ===
+closing AMQP connection <0.369.0> (127.0.0.1:59580 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:30:29 ===
+accepting AMQP connection <0.399.0> (127.0.0.1:59600 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:36:30 ===
+closing AMQP connection <0.326.0> (127.0.0.1:59575 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:37:04 ===
+accepting AMQP connection <0.477.0> (127.0.0.1:59632 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:50:46 ===
+closing AMQP connection <0.399.0> (127.0.0.1:59600 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:51:10 ===
+accepting AMQP connection <0.591.0> (127.0.0.1:59834 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:59:33 ===
+closing AMQP connection <0.591.0> (127.0.0.1:59834 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::17:59:51 ===
+accepting AMQP connection <0.671.0> (127.0.0.1:59936 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:20:43 ===
+closing AMQP connection <0.671.0> (127.0.0.1:59936 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:23:42 ===
+closing AMQP connection <0.477.0> (127.0.0.1:59632 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:24:08 ===
+accepting AMQP connection <0.852.0> (127.0.0.1:60355 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:24:28 ===
+accepting AMQP connection <0.870.0> (127.0.0.1:60359 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:42:25 ===
+closing AMQP connection <0.852.0> (127.0.0.1:60355 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:42:27 ===
+closing AMQP connection <0.870.0> (127.0.0.1:60359 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:44:33 ===
+accepting AMQP connection <0.1026.0> (127.0.0.1:60595 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:45:25 ===
+accepting AMQP connection <0.1047.0> (127.0.0.1:60603 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:48:39 ===
+closing AMQP connection <0.1047.0> (127.0.0.1:60603 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::18:48:59 ===
+accepting AMQP connection <0.1089.0> (127.0.0.1:60636 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::22:50:09 ===
+Stopping RabbitMQ
+
+=INFO REPORT==== 21-Aug-2016::22:50:09 ===
+stopped TCP Listener on [::]:5672
+
+=ERROR REPORT==== 21-Aug-2016::22:50:09 ===
+Error on AMQP connection <0.1026.0> (127.0.0.1:60595 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 21-Aug-2016::22:50:09 ===
+Error on AMQP connection <0.1089.0> (127.0.0.1:60636 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=INFO REPORT==== 21-Aug-2016::22:50:09 ===
+Stopped RabbitMQ application
+
+=INFO REPORT==== 21-Aug-2016::22:50:09 ===
+Halting Erlang VM
+
+=INFO REPORT==== 21-Aug-2016::22:50:50 ===
+Starting RabbitMQ 3.6.5 on Erlang 17.5
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 21-Aug-2016::22:50:50 ===
+node           : rabbit@Wangs-MacBook-Pro
+home dir       : /Users/wanglei
+config file(s) : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/etc/rabbitmq/rabbitmq.config (not found)
+cookie hash    : pYdgbANFei1orh7YpU60PQ==
+log            : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro.log
+sasl log       : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro-sasl.log
+database dir   : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Memory limit set to 2435MB of 6089MB total.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Limiting to approx 7068 file handles (6359 sockets)
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics event collector started.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics channel stats collector started.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics queue stats collector started.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics database started.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_queue_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_vhost_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_vhost_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Server startup complete; 6 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * webmachine
+ * mochiweb
+ * rabbitmq_management_agent
+ * amqp_client
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_vhost_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_node_stats_coarse_node_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_node_node_stats_coarse_node_node_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_connection_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table aggr_connection_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table channel_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:52 ===
+Statistics garbage collector started for table connection_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::22:50:55 ===
+accepting AMQP connection <0.421.0> (127.0.0.1:61360 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::22:50:55 ===
+accepting AMQP connection <0.437.0> (127.0.0.1:61361 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::22:59:58 ===
+closing AMQP connection <0.421.0> (127.0.0.1:61360 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:00:00 ===
+Stopping RabbitMQ
+
+=INFO REPORT==== 21-Aug-2016::23:00:00 ===
+stopped TCP Listener on [::]:5672
+
+=ERROR REPORT==== 21-Aug-2016::23:00:00 ===
+Error on AMQP connection <0.437.0> (127.0.0.1:61361 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=INFO REPORT==== 21-Aug-2016::23:00:00 ===
+Stopped RabbitMQ application
+
+=INFO REPORT==== 21-Aug-2016::23:00:00 ===
+Halting Erlang VM
+
+=INFO REPORT==== 21-Aug-2016::23:00:08 ===
+Starting RabbitMQ 3.6.5 on Erlang 17.5
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 21-Aug-2016::23:00:08 ===
+node           : rabbit@Wangs-MacBook-Pro
+home dir       : /Users/wanglei
+config file(s) : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/etc/rabbitmq/rabbitmq.config (not found)
+cookie hash    : pYdgbANFei1orh7YpU60PQ==
+log            : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro.log
+sasl log       : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro-sasl.log
+database dir   : /Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Memory limit set to 2579MB of 6448MB total.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Limiting to approx 7068 file handles (6359 sockets)
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics event collector started.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics channel stats collector started.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics queue stats collector started.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics database started.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_queue_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_vhost_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_vhost_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_vhost_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Server startup complete; 6 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * webmachine
+ * mochiweb
+ * rabbitmq_management_agent
+ * amqp_client
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_node_stats_coarse_node_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_node_node_stats_coarse_node_node_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_connection_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table aggr_connection_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table channel_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:00:10 ===
+Statistics garbage collector started for table connection_stats with interval 5000.
+
+=INFO REPORT==== 21-Aug-2016::23:02:01 ===
+accepting AMQP connection <0.1365.0> (127.0.0.1:61556 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:02:38 ===
+accepting AMQP connection <0.1720.0> (127.0.0.1:61560 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:13:16 ===
+closing AMQP connection <0.1720.0> (127.0.0.1:61560 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:13:18 ===
+closing AMQP connection <0.1365.0> (127.0.0.1:61556 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:18:41 ===
+accepting AMQP connection <0.10310.0> (127.0.0.1:61681 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:21:38 ===
+closing AMQP connection <0.10310.0> (127.0.0.1:61681 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:21:57 ===
+accepting AMQP connection <0.12078.0> (127.0.0.1:61686 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:24:10 ===
+accepting AMQP connection <0.13291.0> (127.0.0.1:61712 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:24:29 ===
+accepting AMQP connection <0.13468.0> (127.0.0.1:61715 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:24:30 ===
+closing AMQP connection <0.13468.0> (127.0.0.1:61715 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:25:03 ===
+accepting AMQP connection <0.13793.0> (127.0.0.1:61722 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:38:25 ===
+closing AMQP connection <0.12078.0> (127.0.0.1:61686 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:38:48 ===
+accepting AMQP connection <0.21142.0> (127.0.0.1:61805 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 21-Aug-2016::23:47:41 ===
+Stopping RabbitMQ
+
+=INFO REPORT==== 21-Aug-2016::23:47:41 ===
+stopped TCP Listener on [::]:5672
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+Error on AMQP connection <0.13793.0> (127.0.0.1:61722 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+Error on AMQP connection <0.21142.0> (127.0.0.1:61805 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+Error on AMQP connection <0.13291.0> (127.0.0.1:61712 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+** Generic server <0.13303.0> terminating
+** Last message in was {notify_down,<0.13300.0>}
+** When Server state == {q,
+                         {amqqueue,
+                          {resource,<<"/">>,queue,
+                           <<"7e4e6a25-694f-47fd-8d25-17c0ba359379">>},
+                          false,true,<0.13291.0>,[],<0.13303.0>,[],[],[],
+                          undefined,[],[],live},
+                         none,true,rabbit_priority_queue,
+                         {passthrough,rabbit_variable_queue,
+                          {vqstate,
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           {delta,undefined,0,undefined},
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           3,
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {qistate,
+                            "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/queues/4BTV2KWHJCVG9U1Y6AMF6FGMJ",
+                            {{dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             []},
+                            undefined,0,32768,
+                            #Fun<rabbit_variable_queue.2.57383665>,
+                            #Fun<rabbit_variable_queue.3.57383665>,
+                            {0,nil},
+                            {0,nil},
+                            [],[]},
+                           {undefined,
+                            {client_msstate,msg_store_transient,
+                             <<17,79,153,148,229,192,141,117,42,175,83,100,235,
+                               165,10,30>>,
+                             {dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             {state,225355,
+                              "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient"},
+                             rabbit_msg_store_ets_index,
+                             "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient",
+                             <0.223.0>,229452,221258,233549,237646,
+                             {2000,500}}},
+                           false,0,4096,0,0,0,0,0,infinity,0,0,0,0,0,0,
+                           {rates,0.004707569412898607,0.004707569412898607,
+                            0.004707569412898607,0.004707569412898607,
+                            1471794206494857},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           0,0,0,0,2048,default}},
+                         {state,{queue,[],[],0},{active,1471793051040469,1.0}},
+                         undefined,undefined,undefined,undefined,
+                         {state,fine,5000,undefined},
+                         {0,nil},
+                         undefined,undefined,undefined,
+                         {state,
+                          {dict,1,16,16,8,80,48,
+                           {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                           {{[],
+                             [[<0.15134.0>|#Ref<0.0.0.52154>]],
+                             [],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},
+                          delegate},
+                         undefined,undefined,undefined,undefined,1,running}
+** Reason for termination == 
+** {{badmatch,{error,not_found}},
+    [{rabbit_amqqueue_process,i,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,904}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,emit_stats,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,940}]},
+     {rabbit_event,if_enabled,3,[{file,"src/rabbit_event.erl"},{line,137}]},
+     {rabbit_amqqueue_process,'-terminate_delete/3-fun-1-',6,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,284}]},
+     {rabbit_amqqueue_process,terminate_shutdown,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,308}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1129}]}]}
+** In 'terminate' callback with reason ==
+** normal
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+** Generic server <0.13804.0> terminating
+** Last message in was {notify_down,<0.13801.0>}
+** When Server state == {q,
+                         {amqqueue,
+                          {resource,<<"/">>,queue,
+                           <<"38f6b8a0-c9a9-4640-9c86-7961a1ee1ecc">>},
+                          false,true,<0.13793.0>,[],<0.13804.0>,[],[],[],
+                          undefined,[],[],live},
+                         none,true,rabbit_priority_queue,
+                         {passthrough,rabbit_variable_queue,
+                          {vqstate,
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           {delta,undefined,0,undefined},
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           3,
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {qistate,
+                            "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/queues/EO55SS7TE8UT2JXAUXONT61YS",
+                            {{dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             []},
+                            undefined,0,32768,
+                            #Fun<rabbit_variable_queue.2.57383665>,
+                            #Fun<rabbit_variable_queue.3.57383665>,
+                            {0,nil},
+                            {0,nil},
+                            [],[]},
+                           {undefined,
+                            {client_msstate,msg_store_transient,
+                             <<66,11,132,1,58,224,122,37,207,188,86,183,231,
+                               150,230,67>>,
+                             {dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             {state,225355,
+                              "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient"},
+                             rabbit_msg_store_ets_index,
+                             "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient",
+                             <0.223.0>,229452,221258,233549,237646,
+                             {2000,500}}},
+                           false,0,4096,0,0,0,0,0,infinity,0,0,0,0,0,0,
+                           {rates,0.004729123647798684,0.004729123647798684,
+                            0.004729123647798684,0.004729123647798684,
+                            1471794207219022},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           0,0,0,0,2048,default}},
+                         {state,{queue,[],[],0},{active,1471793103171133,1.0}},
+                         undefined,undefined,undefined,undefined,
+                         {state,fine,5000,undefined},
+                         {0,nil},
+                         undefined,undefined,undefined,
+                         {state,
+                          {dict,1,16,16,8,80,48,
+                           {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                           {{[],
+                             [[<0.15134.0>|#Ref<0.0.0.52151>]],
+                             [],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},
+                          delegate},
+                         undefined,undefined,undefined,undefined,1,running}
+** Reason for termination == 
+** {{badmatch,{error,not_found}},
+    [{rabbit_amqqueue_process,i,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,904}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,emit_stats,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,940}]},
+     {rabbit_event,if_enabled,3,[{file,"src/rabbit_event.erl"},{line,137}]},
+     {rabbit_amqqueue_process,'-terminate_delete/3-fun-1-',6,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,284}]},
+     {rabbit_amqqueue_process,terminate_shutdown,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,308}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1129}]}]}
+** In 'terminate' callback with reason ==
+** normal
+
+=ERROR REPORT==== 21-Aug-2016::23:47:41 ===
+** Generic server <0.21153.0> terminating
+** Last message in was {notify_down,<0.21150.0>}
+** When Server state == {q,
+                         {amqqueue,
+                          {resource,<<"/">>,queue,
+                           <<"springCloudBus.anonymous.gYTshq9BRpCi_uDcN4sC-w">>},
+                          false,true,<0.21142.0>,[],<0.21153.0>,[],[],[],
+                          undefined,[],[],live},
+                         none,true,rabbit_priority_queue,
+                         {passthrough,rabbit_variable_queue,
+                          {vqstate,
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           {delta,undefined,0,undefined},
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           7,
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {qistate,
+                            "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/queues/EI0CI2FEE5QLNJMCMYF6AR8W",
+                            {{dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             []},
+                            undefined,0,32768,
+                            #Fun<rabbit_variable_queue.2.57383665>,
+                            #Fun<rabbit_variable_queue.3.57383665>,
+                            {0,nil},
+                            {0,nil},
+                            [],[]},
+                           {undefined,
+                            {client_msstate,msg_store_transient,
+                             <<239,216,225,232,231,236,22,236,114,149,33,171,
+                               156,10,155,129>>,
+                             {dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             {state,225355,
+                              "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient"},
+                             rabbit_msg_store_ets_index,
+                             "/Users/wanglei/Work/training/further-spike/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient",
+                             <0.223.0>,229452,221258,233549,237646,
+                             {2000,500}}},
+                           false,0,4096,0,0,0,0,0,infinity,0,0,0,0,0,0,
+                           {rates,0.008684161781890125,0.008684161781890125,
+                            0.008684161781890125,0.008684161781890125,
+                            1471794203177105},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           0,0,0,0,2048,default}},
+                         {state,{queue,[],[],0},{active,1471793929019727,1.0}},
+                         undefined,undefined,undefined,undefined,
+                         {state,fine,5000,undefined},
+                         {0,nil},
+                         undefined,undefined,undefined,
+                         {state,
+                          {dict,1,16,16,8,80,48,
+                           {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                           {{[[<0.21429.0>|#Ref<0.0.0.73963>]],
+                             [],[],[],[],[],[],[],[],[],[],[],[],[],[],[]}}},
+                          delegate},
+                         undefined,undefined,undefined,undefined,1,running}
+** Reason for termination == 
+** {{badmatch,{error,not_found}},
+    [{rabbit_amqqueue_process,i,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,904}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,emit_stats,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,940}]},
+     {rabbit_event,if_enabled,3,[{file,"src/rabbit_event.erl"},{line,137}]},
+     {rabbit_amqqueue_process,'-terminate_delete/3-fun-1-',6,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,284}]},
+     {rabbit_amqqueue_process,terminate_shutdown,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,308}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1129}]}]}
+** In 'terminate' callback with reason ==
+** normal
+
+=INFO REPORT==== 21-Aug-2016::23:47:41 ===
+Stopped RabbitMQ application
+
+=INFO REPORT==== 21-Aug-2016::23:47:41 ===
+Halting Erlang VM
+
+=INFO REPORT==== 24-Aug-2016::12:51:22 ===
+Starting RabbitMQ 3.6.5 on Erlang 17.5
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 24-Aug-2016::12:51:22 ===
+node           : rabbit@Wangs-MacBook-Pro
+home dir       : /Users/wanglei
+config file(s) : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/etc/rabbitmq/rabbitmq.config (not found)
+cookie hash    : pYdgbANFei1orh7YpU60PQ==
+log            : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro.log
+sasl log       : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro-sasl.log
+database dir   : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Memory limit set to 2488MB of 6221MB total.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Limiting to approx 7068 file handles (6359 sockets)
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics event collector started.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics channel stats collector started.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics queue stats collector started.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics database started.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_queue_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_vhost_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_vhost_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Server startup complete; 6 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * webmachine
+ * mochiweb
+ * rabbitmq_management_agent
+ * amqp_client
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_vhost_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_node_stats_coarse_node_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_node_node_stats_coarse_node_node_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_connection_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table aggr_connection_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table channel_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:24 ===
+Statistics garbage collector started for table connection_stats with interval 5000.
+
+=INFO REPORT==== 24-Aug-2016::12:51:42 ===
+accepting AMQP connection <0.519.0> (127.0.0.1:54630 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 24-Aug-2016::12:52:24 ===
+accepting AMQP connection <0.885.0> (127.0.0.1:54633 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 24-Aug-2016::12:56:43 ===
+Stopping RabbitMQ
+
+=INFO REPORT==== 24-Aug-2016::12:56:43 ===
+stopped TCP Listener on [::]:5672
+
+=ERROR REPORT==== 24-Aug-2016::12:56:43 ===
+Error on AMQP connection <0.519.0> (127.0.0.1:54630 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 24-Aug-2016::12:56:43 ===
+Error on AMQP connection <0.885.0> (127.0.0.1:54633 -> 127.0.0.1:5672, vhost: '/', user: 'guest', state: running), channel 0:
+operation none caused a connection exception connection_forced: "broker forced connection closure with reason 'shutdown'"
+
+=ERROR REPORT==== 24-Aug-2016::12:56:43 ===
+** Generic server <0.530.0> terminating
+** Last message in was {notify_down,<0.527.0>}
+** When Server state == {q,
+                         {amqqueue,
+                          {resource,<<"/">>,queue,
+                           <<"springCloudBus.anonymous.Itj2xKWmSP6gw-kAW2yd3w">>},
+                          false,true,<0.519.0>,[],<0.530.0>,[],[],[],
+                          undefined,[],[],live},
+                         none,true,rabbit_priority_queue,
+                         {passthrough,rabbit_variable_queue,
+                          {vqstate,
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           {delta,undefined,0,undefined},
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           3,
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {qistate,
+                            "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/queues/UO56HRVM85XVR0CZX3KSYSUG",
+                            {{dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             []},
+                            undefined,0,32768,
+                            #Fun<rabbit_variable_queue.2.57383665>,
+                            #Fun<rabbit_variable_queue.3.57383665>,
+                            {0,nil},
+                            {0,nil},
+                            [],[]},
+                           {undefined,
+                            {client_msstate,msg_store_transient,
+                             <<236,97,81,204,160,42,90,59,170,33,91,100,35,3,
+                               189,13>>,
+                             {dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             {state,225355,
+                              "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient"},
+                             rabbit_msg_store_ets_index,
+                             "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient",
+                             <0.223.0>,229452,221258,233549,237646,
+                             {2000,500}}},
+                           false,0,4096,0,0,0,0,0,infinity,0,0,0,0,0,0,
+                           {rates,0.12869556739991722,0.12869556739991722,
+                            0.12869556739991722,0.12869556739991722,
+                            1472014403482741},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           0,0,0,0,2048,default}},
+                         {state,
+                          {queue,[],[],0},
+                          {active,1472014399213690,0.9999792636303761}},
+                         undefined,undefined,undefined,undefined,
+                         {state,fine,5000,undefined},
+                         {0,nil},
+                         undefined,undefined,undefined,
+                         {state,
+                          {dict,2,16,16,8,80,48,
+                           {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                           {{[],[],[],[],[],[],
+                             [[<0.1369.0>|#Ref<0.0.0.5192>]],
+                             [],[],[],
+                             [[<0.1389.0>|#Ref<0.0.0.5273>]],
+                             [],[],[],[],[]}}},
+                          delegate},
+                         undefined,undefined,undefined,undefined,1,running}
+** Reason for termination == 
+** {{badmatch,{error,not_found}},
+    [{rabbit_amqqueue_process,i,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,904}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,emit_stats,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,940}]},
+     {rabbit_event,if_enabled,3,[{file,"src/rabbit_event.erl"},{line,137}]},
+     {rabbit_amqqueue_process,'-terminate_delete/3-fun-1-',6,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,284}]},
+     {rabbit_amqqueue_process,terminate_shutdown,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,308}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1129}]}]}
+** In 'terminate' callback with reason ==
+** normal
+
+=ERROR REPORT==== 24-Aug-2016::12:56:43 ===
+** Generic server <0.896.0> terminating
+** Last message in was {notify_down,<0.893.0>}
+** When Server state == {q,
+                         {amqqueue,
+                          {resource,<<"/">>,queue,
+                           <<"springCloudBus.anonymous.HZ-TsHXFTQiOmK8GNbz48A">>},
+                          false,true,<0.885.0>,[],<0.896.0>,[],[],[],
+                          undefined,[],[],live},
+                         none,true,rabbit_priority_queue,
+                         {passthrough,rabbit_variable_queue,
+                          {vqstate,
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           {delta,undefined,0,undefined},
+                           {0,{[],[]}},
+                           {0,{[],[]}},
+                           3,
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {qistate,
+                            "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/queues/6YGF0P5S5SUMXBH0JCSV4Z8QE",
+                            {{dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             []},
+                            undefined,0,32768,
+                            #Fun<rabbit_variable_queue.2.57383665>,
+                            #Fun<rabbit_variable_queue.3.57383665>,
+                            {0,nil},
+                            {0,nil},
+                            [],[]},
+                           {undefined,
+                            {client_msstate,msg_store_transient,
+                             <<155,204,212,55,125,237,128,234,184,44,23,79,245,
+                               207,67,45>>,
+                             {dict,0,16,16,8,80,48,
+                              {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                               []},
+                              {{[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                []}}},
+                             {state,225355,
+                              "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient"},
+                             rabbit_msg_store_ets_index,
+                             "/Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro/msg_store_transient",
+                             <0.223.0>,229452,221258,233549,237646,
+                             {2000,500}}},
+                           false,0,4096,0,0,0,0,0,infinity,0,0,0,0,0,0,
+                           {rates,0.13902251899618273,0.24149228411235854,
+                            0.24149228411235854,0.3439620492285344,
+                            1472014403488018},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           {0,nil},
+                           0,0,0,0,2048,default}},
+                         {state,
+                          {queue,[],[],0},
+                          {active,1472014400996749,0.9638924818508782}},
+                         undefined,undefined,undefined,undefined,
+                         {state,fine,5000,undefined},
+                         {0,nil},
+                         undefined,undefined,undefined,
+                         {state,
+                          {dict,2,16,16,8,80,48,
+                           {[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]},
+                           {{[],[],[],[],[],[],
+                             [[<0.1369.0>|#Ref<0.0.0.5189>]],
+                             [],[],[],
+                             [[<0.1389.0>|#Ref<0.0.0.5270>]],
+                             [],[],[],[],[]}}},
+                          delegate},
+                         undefined,undefined,undefined,undefined,1,running}
+** Reason for termination == 
+** {{badmatch,{error,not_found}},
+    [{rabbit_amqqueue_process,i,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,904}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,'-infos/2-lc$^0/1-0-',2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,859}]},
+     {rabbit_amqqueue_process,emit_stats,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,940}]},
+     {rabbit_event,if_enabled,3,[{file,"src/rabbit_event.erl"},{line,137}]},
+     {rabbit_amqqueue_process,'-terminate_delete/3-fun-1-',6,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,284}]},
+     {rabbit_amqqueue_process,terminate_shutdown,2,
+                              [{file,"src/rabbit_amqqueue_process.erl"},
+                               {line,308}]},
+     {gen_server2,terminate,3,[{file,"src/gen_server2.erl"},{line,1129}]}]}
+** In 'terminate' callback with reason ==
+** normal
+
+=INFO REPORT==== 24-Aug-2016::12:56:43 ===
+Stopped RabbitMQ application
+
+=INFO REPORT==== 24-Aug-2016::12:56:43 ===
+Halting Erlang VM
+
+=INFO REPORT==== 5-Sep-2016::16:32:15 ===
+Starting RabbitMQ 3.6.5 on Erlang 17.5
+Copyright (C) 2007-2016 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 5-Sep-2016::16:32:15 ===
+node           : rabbit@Wangs-MacBook-Pro
+home dir       : /Users/wanglei
+config file(s) : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/etc/rabbitmq/rabbitmq.config (not found)
+cookie hash    : pYdgbANFei1orh7YpU60PQ==
+log            : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro.log
+sasl log       : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/log/rabbitmq/rabbit@Wangs-MacBook-Pro-sasl.log
+database dir   : /Users/wanglei/Work/training/microservice-online-training/training/centralized-config/push-config-to-service/rabbitmq_server-3.6.5/var/lib/rabbitmq/mnesia/rabbit@Wangs-MacBook-Pro
+
+=INFO REPORT==== 5-Sep-2016::16:32:18 ===
+Memory limit set to 2854MB of 7135MB total.
+
+=INFO REPORT==== 5-Sep-2016::16:32:18 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 5-Sep-2016::16:32:18 ===
+Limiting to approx 7068 file handles (6359 sockets)
+
+=INFO REPORT==== 5-Sep-2016::16:32:18 ===
+FHC read buffering:  OFF
+FHC write buffering: ON
+
+=INFO REPORT==== 5-Sep-2016::16:32:18 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 5-Sep-2016::16:32:26 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 5-Sep-2016::16:32:26 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 5-Sep-2016::16:32:26 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 5-Sep-2016::16:32:42 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics event collector started.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics channel stats collector started.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics queue stats collector started.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics database started.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_queue_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Server startup complete; 6 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * webmachine
+ * mochiweb
+ * rabbitmq_management_agent
+ * amqp_client
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_vhost_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_vhost_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_rates with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_vhost_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_vhost_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_queue_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_stats_queue_msg_counts with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_deliver_get with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_channel_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_exchange_stats_fine_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_node_stats_coarse_node_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_node_node_stats_coarse_node_node_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_connection_stats_coarse_conn_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table aggr_connection_stats_process_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table channel_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:32:50 ===
+Statistics garbage collector started for table connection_stats with interval 5000.
+
+=INFO REPORT==== 5-Sep-2016::16:33:52 ===
+accepting AMQP connection <0.888.0> (127.0.0.1:64428 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 5-Sep-2016::16:33:57 ===
+accepting AMQP connection <0.940.0> (127.0.0.1:64429 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:34:00 ===
+closing AMQP connection <0.888.0> (127.0.0.1:64428 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:34:02 ===
+accepting AMQP connection <0.993.0> (127.0.0.1:64430 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:34:05 ===
+closing AMQP connection <0.940.0> (127.0.0.1:64429 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:34:07 ===
+accepting AMQP connection <0.1029.0> (127.0.0.1:64431 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:34:10 ===
+closing AMQP connection <0.993.0> (127.0.0.1:64430 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:34:12 ===
+accepting AMQP connection <0.1082.0> (127.0.0.1:64432 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:34:15 ===
+closing AMQP connection <0.1029.0> (127.0.0.1:64431 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:34:18 ===
+accepting AMQP connection <0.1119.0> (127.0.0.1:64433 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:34:20 ===
+closing AMQP connection <0.1082.0> (127.0.0.1:64432 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:35:27 ===
+accepting AMQP connection <0.1718.0> (127.0.0.1:64444 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 5-Sep-2016::16:35:32 ===
+accepting AMQP connection <0.1755.0> (127.0.0.1:64451 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:35:35 ===
+closing AMQP connection <0.1718.0> (127.0.0.1:64444 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:35:37 ===
+accepting AMQP connection <0.1807.0> (127.0.0.1:64460 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:35:40 ===
+closing AMQP connection <0.1755.0> (127.0.0.1:64451 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:35:42 ===
+accepting AMQP connection <0.1844.0> (127.0.0.1:64473 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:35:45 ===
+closing AMQP connection <0.1807.0> (127.0.0.1:64460 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:35:47 ===
+accepting AMQP connection <0.1896.0> (127.0.0.1:64496 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:35:50 ===
+closing AMQP connection <0.1844.0> (127.0.0.1:64473 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=INFO REPORT==== 5-Sep-2016::16:35:52 ===
+accepting AMQP connection <0.1933.0> (127.0.0.1:64506 -> 127.0.0.1:5672)
+
+=WARNING REPORT==== 5-Sep-2016::16:35:55 ===
+closing AMQP connection <0.1896.0> (127.0.0.1:64496 -> 127.0.0.1:5672):
+client unexpectedly closed TCP connection
+
+=ERROR REPORT==== 6-Sep-2016::05:22:11 ===
+closing AMQP connection <0.1119.0> (127.0.0.1:64433 -> 127.0.0.1:5672):
+missed heartbeats from client, timeout: 60s
+
+=INFO REPORT==== 6-Sep-2016::05:22:12 ===
+accepting AMQP connection <0.24765.0> (127.0.0.1:64591 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 6-Sep-2016::09:02:51 ===
+closing AMQP connection <0.24765.0> (127.0.0.1:64591 -> 127.0.0.1:5672)
+
+=INFO REPORT==== 6-Sep-2016::09:02:53 ===
+closing AMQP connection <0.1933.0> (127.0.0.1:64506 -> 127.0.0.1:5672)
