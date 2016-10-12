@@ -9,6 +9,8 @@ services:
       SPRING_PROFILES_ACTIVE: docker
     ports:
       - "8888:8888"
+    depends_on:
+      - rabbitmq
   event-service-1:
     build: event-service
     command: bash -c "wait-for-it config-server:8888 && wait-for-it rabbitmq:5672 && java -jar /app/event-service-latest.jar"
