@@ -4,6 +4,7 @@ services:
     image: rabbitmq
   config-server:
     build: config-server
+    restart: always
     command: java -jar /app/config-server-latest.jar
     environment:
       SPRING_PROFILES_ACTIVE: docker
@@ -13,6 +14,7 @@ services:
       - rabbitmq
   event-service-1:
     build: event-service
+    restart: always
     command: bash -c "wait-for-it config-server:8888 && wait-for-it rabbitmq:5672 && java -jar /app/event-service-latest.jar"
     environment:
       SPRING_PROFILES_ACTIVE: docker
@@ -24,6 +26,7 @@ services:
       - rabbitmq
   event-service-2:
     build: event-service
+    restart: always
     command: bash -c "wait-for-it config-server:8888 && wait-for-it rabbitmq:5672 && java -jar /app/event-service-latest.jar"
     environment:
       SPRING_PROFILES_ACTIVE: docker
