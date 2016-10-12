@@ -5,4 +5,5 @@ build
 **/.gradle
 .gradle
 .DS_Store
-refresh-with-mq/rabbitmq_server-3.6.5/*
+refresh-with-mq/rabbitmq_server-3.6.5
+config-repo
