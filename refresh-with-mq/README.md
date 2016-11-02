@@ -9,8 +9,8 @@
 
 执行如下命令
 ```
-curl -X POST http://localhost:8080/bus/refresh
-curl -X POST http://localhost:8888/bus/refresh?destination=event-service:**
+curl -X POST http://localhost:8021/bus/refresh
+curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**
 ```
 
 ### 使用Docker运行
@@ -23,6 +23,6 @@ docker-compose up --build
 
 执行如下命令
 ```
-curl -X POST http://localhost:8080/bus/refresh
-curl -X POST http://localhost:8888/bus/refresh?destination=event-service:**
+curl -X POST http://localhost:8080/bus/refresh(Docker环境下不工作)
+curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**
 ```

@@ -3,9 +3,9 @@ spring:
     config:
       server:
         git:
-          uri: file://${user.home}/Work/training/microservice-online-training/training/training-code/centralized-config/config-repo
+          uri: file://${pwd}/../../config-repo
 server:
-  port: 8888
+  port: 8020
 
 ---
 
@@ -15,4 +15,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/microservice-in-action/config-repo
+          uri: https://git.coding.net/microservice_ops/config-repo

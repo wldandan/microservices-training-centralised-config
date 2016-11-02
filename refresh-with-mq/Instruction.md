@@ -5,7 +5,7 @@
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
    * 命名为cofig-server 
-   * 设置端口为8888
+   * 设置端口为8021
 
 2. 检查依赖
     * spring-cloud-config-server
@@ -19,8 +19,8 @@
 5. 在config-repo中定义配置文件，如"{spring-application}-{profile}.yml” (event-service-*.properties).
     * 定义database.username/database.url/database.password
 
-6. 运行config-server，访问http://localhost:8888/event-service/default/
-                         http://localhost:8888/event-service/development
+6. 运行config-server，访问http://localhost:8021/event-service/default/
+                         http://localhost:8021/event-service/development
     
 ----------------------------------------------------------------------------
 
@@ -38,7 +38,7 @@
 3. 在bootstrap.{yml|properties}中设置服务的相关参数
     spring.application.name=event-service
     server.port=8080
-    spring.cloud.config.uri=http://localhost:8888
+    spring.cloud.config.uri=http://localhost:8021
 
 4. 在EventController中使用配置信息
     @Value("${database.url}")
@@ -69,7 +69,7 @@
   4. 执行```curl -X POST http://localhost:8090/bus/refresh```，可以看到两个运行event-service结点的刷新，返回结果类似
   ["database.username"]
 
-  或者执行```curl -X POST http://localhost:8888/bus/refresh?destination=event-service:**```
+  或者执行```curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**```
 
   5. 然后刷新http://localhost:8080，http://localhost:8090，可以看到变化
 
@@ -83,7 +83,7 @@
   包括了Rabbitmq、Config-server和Event-service
 
   目前docker环境下，只有向config-server发请求，同步刷新工作正常
-    执行```curl -X POST http://localhost:8888/bus/refresh?destination=event-service:**```
+    执行```curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**```
 
   [疑问]执行如下命令，向其中某结点发送请求，另外的结点并没有收到信息
     ```curl -X POST http://localhost:8090/bus/refresh```  

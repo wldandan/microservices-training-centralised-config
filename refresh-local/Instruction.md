@@ -5,7 +5,7 @@
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
    * 命名为cofig-server 
-   * 设置端口为8888
+   * 设置端口为8021
 
 2. 检查依赖
     * spring-cloud-config-server
@@ -23,19 +23,19 @@
     * 定义分支testdatabase.username=[test]admin    
 
 
-6. 运行config-server，访问http://localhost:8888/event-service/default/
+6. 运行config-server，访问http://localhost:8021/event-service/default/
    或者尝试访问如下不同的URL
     /{application}/{profile}
-    http://localhost:8888/event-service/development
+    http://localhost:8021/event-service/development
     (event-service-development.properties)
-    http://localhost:8888/event-service/production
+    http://localhost:8021/event-service/production
     (event-service-production.properties)
 
     /{application}/{profile}[/{label}]
-    http://localhost:8888/event-service/development/master
+    http://localhost:8021/event-service/development/master
     //event-service-development.properties in master branch
 
-    http://localhost:8888/event-service/production/test
+    http://localhost:8021/event-service/production/test
     //event-service-production.properties in test branch
 
 > 如果是本地文件系统，则目录需要是git repo,同时能够执行git checkout test
@@ -55,7 +55,7 @@
 3. 在bootstrap.{yml|properties}中设置服务的相关参数
     spring.application.name=event-service
     server.port=8080
-    spring.cloud.config.uri=http://localhost:8888
+    spring.cloud.config.uri=http://localhost:8021
 
 4. 在EventController中使用配置信息
     @Value("${database.url}")

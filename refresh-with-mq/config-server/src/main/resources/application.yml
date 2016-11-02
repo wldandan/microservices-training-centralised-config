@@ -5,7 +5,7 @@ spring:
         git:
           uri: file://${user.home}/Work/training/microservice-online-training/training/training-code/centralized-config/config-repo
 server:
-  port: 8888
+  port: 8021
 
 ---
 
