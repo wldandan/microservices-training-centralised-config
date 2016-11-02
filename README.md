@@ -65,16 +65,17 @@ docker-compose up
 
 #### 准备条件
 
-* 使用github(或者coding.net)存储配置信息
-* 使用RabbitMQ同步消息
+* github(或者coding.net)存储配置信息
+* RabbitMQ
 * Config-server
 * Event-service的两个实例
 
 #### 执行过程
 
-* a) 启动Config server与Event service的两个实例
+* a) 启动RabbitMQ、Config server与Event service的两个实例
  
 ```
+./sbin/rabbitmq-server //start rabbitMQ
 SERVER_PORT=8020 java -jar build/libs/config-server.0.0.1.jar &&
 SERVER_PORT=9000 java -jar buid/libs/event-service-0.0.1.jar &&
 SERVER_PORT=9001 java -jar buid/libs/event-service-0.0.1.jar
@@ -87,6 +88,11 @@ SERVER_PORT=9001 java -jar buid/libs/event-service-0.0.1.jar
 //curl -X POST http://[service-host]:[service-port]/bus/refresh
 curl -X POST localhost:9000/bus/refresh
 ```	
+
+或者向config server发送请求，可以指定destination作为接受的service名称
+```
+curl -X POST http://localhost:8020/bus/refresh?destination=event:**
+```
 
 * e) 访问Eventservice的另外一个实例，localhost:9001/
 

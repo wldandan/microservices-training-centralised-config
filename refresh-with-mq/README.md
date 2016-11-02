@@ -5,7 +5,7 @@
 ./start_service.sh
 ```
 
-修改config-repo中的配置文件event-service-docker.properties
+修改config-repo中的配置文件event.yml
 
 执行如下命令
 ```
@@ -19,10 +19,10 @@ curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**
 docker-compose up --build
 ```
 
-修改config-repo中的配置文件event-service-docker.properties(github)
+修改config-repo中的配置文件event.yml
 
 执行如下命令
 ```
-curl -X POST http://localhost:8080/bus/refresh(Docker环境下不工作)
+curl -X POST http://localhost:8080/bus/refresh
 curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**
 ```

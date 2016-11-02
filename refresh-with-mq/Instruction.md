@@ -5,7 +5,7 @@
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
    * 命名为cofig-server 
-   * 设置端口为8021
+   * 设置端口为8020
 
 2. 检查依赖
     * spring-cloud-config-server
@@ -17,7 +17,7 @@
     * 本地文件
 
 5. 在config-repo中定义配置文件，如"{spring-application}-{profile}.yml” (event-service-*.properties).
-    * 定义database.username/database.url/database.password
+    * 定义feature.x.enable
 
 6. 运行config-server，访问http://localhost:8021/event-service/default/
                          http://localhost:8021/event-service/development
@@ -29,7 +29,7 @@
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
    * 命名为{name}-service(event-service)
-   * 设置端口为8080
+   * 设置端口为9000
 
 2. 检查依赖
    * spring-cloud-starter-config
@@ -37,14 +37,14 @@
 
 3. 在bootstrap.{yml|properties}中设置服务的相关参数
     spring.application.name=event-service
-    server.port=8080
-    spring.cloud.config.uri=http://localhost:8021
+    server.port=9000
+    spring.cloud.config.uri=http://localhost:8020
 
 4. 在EventController中使用配置信息
-    @Value("${database.url}")
-    String dbUrl;
+    @Value("${feature.x.enable}")
+    String featureXEnable;
 
-5. 运行服务，访问 localhost:8080/
+5. 运行服务，访问 localhost:9000/
 
 ---------------------------------------------------------------------------
 
@@ -60,18 +60,17 @@
     ```可以使用本地的config-repo```
 
   4. 启动多个event-service的实例
-    SERVER_PORT=8080 ./gradlew bootRun
-    SERVER_PORT=8090 ./gradlew bootRun
+    SERVER_PORT=9000 ./gradlew bootRun
+    SERVER_PORT=9001 ./gradlew bootRun
 
   5. 改变config-repo中的参数，譬如 
-   "database.username=admin-new-change"
 
-  4. 执行```curl -X POST http://localhost:8090/bus/refresh```，可以看到两个运行event-service结点的刷新，返回结果类似
-  ["database.username"]
+  4. 执行```curl -X POST http://localhost:9000/bus/refresh```，可以看到两个运行event-service结点的刷新，返回结果类似
+  ["feature.x.enable"]
 
-  或者执行```curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**```
+  或者执行```curl -X POST http://localhost:8020/bus/refresh?destination=event-service:**```
 
-  5. 然后刷新http://localhost:8080，http://localhost:8090，可以看到变化
+  5. 然后刷新http://localhost:9000，http://localhost:9001，可以看到变化
 
 ---------------------------------------------------------------------------
 
@@ -83,7 +82,7 @@
   包括了Rabbitmq、Config-server和Event-service
 
   目前docker环境下，只有向config-server发请求，同步刷新工作正常
-    执行```curl -X POST http://localhost:8021/bus/refresh?destination=event-service:**```
+    执行```curl -X POST http://localhost:8020/bus/refresh?destination=event-service:**```
 
-  [疑问]执行如下命令，向其中某结点发送请求，另外的结点并没有收到信息
-    ```curl -X POST http://localhost:8090/bus/refresh```  
+  执行如下命令，向其中某结点发送请求，另外的结点并没有收到信息
+    ```curl -X POST http://localhost:9000/bus/refresh```  

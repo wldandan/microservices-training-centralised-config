@@ -10,17 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class EventController {
 
-    @Value("${database.url}")
-    String dbUrl;
-
-    @Value("${database.username}")
-    String dbUser;
-
-    @Value("${database.password}")
-    String dbPass;
+    @Value("${feature.x.enable}")
+    String featureXEnable;
 
     @RequestMapping("/")
     String index() {
-        return "DBUrl:" + dbUrl + " | dbUser:" + dbUser + " | dbPass:" + dbPass;
+        if (Boolean.valueOf(featureXEnable)) {return "Feature X Is Enabled";}
+        return "Event Controller is handling logic without Feature X";
     }
 }
