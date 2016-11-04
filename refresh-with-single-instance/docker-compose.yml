@@ -1,0 +1,18 @@
+version: '2'
+services:
+  config-server:
+    build: config-server
+    command: java -jar /app/config-server-latest.jar
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "8020:8020"
+  event-service:
+    build: event-service
+    command: bash -c "wait-for-it config-server:8020 && java -jar /app/event-service-latest.jar"
+    environment:
+      SPRING_PROFILES_ACTIVE: docker
+    ports:
+      - "9000:9000"
+    depends_on:
+      - config-server
