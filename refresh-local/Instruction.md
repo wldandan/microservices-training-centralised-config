@@ -5,7 +5,7 @@
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
    * 命名为cofig-server 
-   * 设置端口为8021
+   * 设置端口为8020
 
 2. 检查依赖
     * spring-cloud-config-server
@@ -18,27 +18,20 @@
 
 
 5. 在config-repo中定义配置文件，如"{spring-application}-{profile}.yml” (或者properties文件).
-    * 本例中使用本地文件，并定义event-service.properties
-    * 定义database.username=admin
-    * 定义分支testdatabase.username=[test]admin    
+    * 本例中使用本地文件，并定义event.yml
 
-
-6. 运行config-server，访问http://localhost:8021/event-service/default/
+6. 运行config-server，访问http://localhost:8020/event/default/
    或者尝试访问如下不同的URL
     /{application}/{profile}
-    http://localhost:8021/event-service/development
-    (event-service-development.properties)
-    http://localhost:8021/event-service/production
-    (event-service-production.properties)
+    http://localhost:8020/event/development
+    http://localhost:8020/event/production
 
     /{application}/{profile}[/{label}]
-    http://localhost:8021/event-service/development/master
-    //event-service-development.properties in master branch
-
+    http://localhost:8020/event/development/master
     http://localhost:8021/event-service/production/test
     //event-service-production.properties in test branch
 
-> 如果是本地文件系统，则目录需要是git repo,同时能够执行git checkout test
+> 如果是本地文件系统，则目录需要git repo,同时能够执行git checkout test
 
 ---------------------------------------------------------------------------
 
@@ -46,29 +39,29 @@
 
 1. 创建Spring-boot应用
    * 使用start.spring.io(http://start.spring.io/) 或者IDE创建应用
-   * 命名为cofig-client或{name}-service
-   * 设置端口为8080
+   * 命名为{name}-service
+   * 设置端口为9000
 
 2. 检查依赖
    * spring-cloud-starter-config
 
 3. 在bootstrap.{yml|properties}中设置服务的相关参数
-    spring.application.name=event-service
-    server.port=8080
-    spring.cloud.config.uri=http://localhost:8021
+    spring.application.name=event
+    server.port=9000
+    spring.cloud.config.uri=http://localhost:8020
 
 4. 在EventController中使用配置信息
-    @Value("${database.url}")
-    String dbUrl;
+    @Value("${feature.x.enable}")
+    String featureXEnable;
 
-5. 运行服务，访问 localhost:8080/
+5. 运行服务，访问 localhost:9000/
 
 ---------------------------------------------------------------------------
 
 **** 提示 - 通过spring profile访问不同配置文件****
 
-1. 创建配置文件，命名为"event-service-production.properties”, 并修改相应的参数：
-   譬如database.url，database.username，database.password
+1. 修改event.yml, 并修改相应的参数：
+   譬如feature.x.enable
 
 2. 修改bootstrap文件，包含spring.profiles.active: production.
    或者也可以直接使用SPRIG_PROFILES_ACTIVE=production gradle bootRun 来运行
@@ -84,10 +77,10 @@
     @RefreshScope
 
   3. 改变config-repo中的参数，譬如 
-   "database.username=admin-new-change"
+   "feature.x.enable=false"
 
-  4. 执行 ```curl -X POST http://localhost:8080/refresh```，返回结果类似
-  ["database.username"]
+  4. 执行 ```curl -X POST http://localhost:9000/refresh```，返回结果类似
+  ["feature.x.enable"]
 
   5. 然后刷新http://localhost:8080
    
@@ -101,4 +94,4 @@
   包括了Config-server和Event-service
 
   启动后执行
-    ```curl -X POST http://localhost:8080/refresh```
+    ```curl -X POST http://localhost:9000/refresh```

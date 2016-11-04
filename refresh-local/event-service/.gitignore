@@ -1,5 +1,6 @@
-event-service.iml
-event-service.ipr
-event-service.iws
+*.iml
+*.ipr
+*.iws
 .gradle
-/build
+gradle
+build
