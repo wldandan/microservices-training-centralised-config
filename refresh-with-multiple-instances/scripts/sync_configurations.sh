@@ -1,0 +1,1 @@
+siege 'http://localhost:9000/bus/refresh POST'
