@@ -19,8 +19,8 @@
 5. 在config-repo中定义配置文件，如"{spring-application}-{profile}.yml” (event-service-*.properties).
     * 定义feature.x.enable
 
-6. 运行config-server，访问http://localhost:8021/event-service/default/
-                         http://localhost:8021/event-service/development
+6. 运行config-server，访问http://localhost:8020/event-service/default/
+                         http://localhost:8020/event-service/development
     
 ----------------------------------------------------------------------------
 
