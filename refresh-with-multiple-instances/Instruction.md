@@ -48,7 +48,7 @@
 
 ---------------------------------------------------------------------------
 
-** 第三部分 - 使用Spring Cloud Bus实现多实例配置刷新
+** 第三部分 - 使用Spring Cloud Bus实现多实例配置刷新 **
 
   1. 停掉所有的服务
 
@@ -56,8 +56,7 @@
      启动rabbitmq server
     ```sbin/rabbitmq-server```
 
-  3. 启动config-server
-    ```可以使用本地的config-repo```
+  3. 启动config-server(可以使用本地的config-repo)
 
   4. 启动多个event-service的实例
     SERVER_PORT=9000 ./gradlew bootRun
@@ -65,24 +64,34 @@
 
   5. 改变config-repo中的参数，譬如 
 
-  4. 执行```curl -X POST http://localhost:9000/bus/refresh```，可以看到两个运行event-service结点的刷新，返回结果类似
-  ["feature.x.enable"]
+  6. 执行```curl -X POST http://localhost:9000/bus/refresh```
+     可以看到两个运行event-service结点的刷新，返回结果类似
+      ```["feature.x.enable"]```
 
-  或者执行```curl -X POST http://localhost:8020/bus/refresh?destination=event-service:**```
+    或者执行```curl -X POST http://localhost:8020/bus/refresh?destination=event-service:**```(**表示Profile和实例的端口)
 
-  5. 然后刷新http://localhost:9000，http://localhost:9001，可以看到变化
+  7. 然后刷新http://localhost:9000，http://localhost:9001，可以看到变化
+
+  8. 使用RabbitMQ的Admin Console显示message
+
+     * 使用Management插件
+     ```$>sbin/rabbitmq-plugins enable rabbitmq_management```
+     
+     *	重启rabbitmq server	
+
+     * 使用siege发送请求
+     ```siege 'http://localhost:9000/bus/refresh POST'```
+
 
 ---------------------------------------------------------------------------
 
-** 第四部分 - 使用Docker运行Spring Cloud Bus与多实例配置
+** 第四部分 - 使用Docker运行Spring Cloud Bus与多实例配置 **
 
-  如果使用Docker，则执行
+  1. 如果使用Docker，则执行
   ```docker-compose up --build```
-
   包括了Rabbitmq、Config-server和Event-service
-
-  目前docker环境下，只有向config-server发请求，同步刷新工作正常
-    执行```curl -X POST http://localhost:8020/bus/refresh?destination=event-service:**```
-
-  执行如下命令，向其中某结点发送请求，另外的结点并没有收到信息
-    ```curl -X POST http://localhost:9000/bus/refresh```  
+  
+  2. 向其中某结点发送请求，执行
+  ```curl -X POST http://localhost:9000/bus/refresh```  
+     或者向config-server发请求，同步刷新多实例，执行
+  ```curl -X POST http://localhost:8020/bus/refresh?destination=event:**```
