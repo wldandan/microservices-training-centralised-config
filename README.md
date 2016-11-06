@@ -1,5 +1,6 @@
 ## 基本介绍
 
+
 本节课包括两部分内容：
 
 ### 1. refresh-with-single-instance
@@ -13,7 +14,7 @@
 
 #### 准备条件
 
-* 本地文件系统存储配置信息
+* 本地文件系统存储配置信息(内容请参考[config-repo](https://coding.net/u/microservice_ops/p/config-repo/git))
 * Config server
 * Event service的1个实例
 
@@ -56,7 +57,7 @@ docker-compose up --build
 
 #### 准备条件
 
-* 本地文件系统存储配置信息
+* 本地文件系统存储配置信息(内容请参考[config-repo](https://coding.net/u/microservice_ops/p/config-repo/git))
 * 使用RabbitMQ同步消息
 * Config-server
 * Event-service的两个实例
