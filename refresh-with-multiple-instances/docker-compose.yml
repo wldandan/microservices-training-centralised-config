@@ -1,7 +1,9 @@
 version: '2'
 services:
   rabbitmq:
-    image: rabbitmq
+    image: rabbitmq:3-management
+    ports:
+      - "15672:15672"
   config-server:
     build: config-server
     restart: always

@@ -23,8 +23,8 @@
 * a) 启动Config Server与Eventservice实例
 
 ```
-SERVER_PORT=8020 java -jar build/libs/config-server.0.0.1.jar &&
-SERVER_PORT=9000 java -jar buid/libs/event-service-0.0.1.jar &&
+SERVER_PORT=8020 java -jar build/libs/config-server.0.0.1.jar 
+SERVER_PORT=9000 java -jar buid/libs/event-service-0.0.1.jar 
 ```
 
 * b) 修改配置文件
@@ -44,7 +44,7 @@ docker-compose up --build
 ```
 * 注意这时候的配置文件变更应该发生在github/coding.net上，因为本例子Docker没有读取本地文件
 
-### 2. refresh-with-ma
+### 2. refresh-with-multiple-instances
 
 本小节演示如何使用RabbitMQ，动态更新event-service的一组实例
 
@@ -66,16 +66,15 @@ docker-compose up --build
 * a) 启动Config server与Event service的两个实例
  
 ```
-SERVER_PORT=8020 java -jar build/libs/config-server.0.0.1.jar &&
-SERVER_PORT=9000 java -jar buid/libs/event-service-0.0.1.jar &&
+SERVER_PORT=8020 java -jar build/libs/config-server.0.0.1.jar 
+SERVER_PORT=9000 java -jar buid/libs/event-service-0.0.1.jar 
 SERVER_PORT=9001 java -jar buid/libs/event-service-0.0.1.jar
 ```
 * b) 修改配置文件
 * c) 查看Config server的变化
-* d) 向其中一个实例发送配置信息刷新请求
+* d) 向其中一个实例发送配置信息刷新请求(//curl -X POST http://[service-host]:[service-port]/bus/refresh)
 
 ```
-//curl -X POST http://[service-host]:[service-port]/bus/refresh
 curl -X POST localhost:9000/bus/refresh
 ```	
 

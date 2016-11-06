@@ -78,6 +78,7 @@
      ```$>sbin/rabbitmq-plugins enable rabbitmq_management```
      
      *	重启rabbitmq server	
+     *  访问localhost:15672(guest/guest)
 
      * 使用siege发送请求
      ```siege 'http://localhost:9000/bus/refresh POST'```
